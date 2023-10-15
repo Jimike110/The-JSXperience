@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+body {
+  margin: 0;
+  padding: 0;
+
+}
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  box-sizing: border-box;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.post-preview {
+  background-color: #fffaca;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 11px;
+}
+.post-preview h3 {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.post-preview p {
+  font-size: 17px;
+  font-weight: 500;
+}
+.post-preview span {
+  display: block;
+  margin-top: 10px;
+}
+
+form {
+  display: block;
+  border: 1px solid #f1356d;
+  padding: 20px;
+  border-radius: 11px;
+  margin: 20px 5px;
+}
+input, textarea, select {
+  border-radius: 5px;
+  border: 1px solid #f1356d;
+  margin-bottom: 10px;
+  line-height: 16px;
+  width: 100%;
+  font-size: 17px;
+  padding: 8px;
+}
+form > h2 {
+  margin-bottom: 10px;
+}
+form > button {
+  background-color: #f1356d;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+}
