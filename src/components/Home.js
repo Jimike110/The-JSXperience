@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import BlogPosts from "./BlogPosts";
 
 const Home = () => {
@@ -45,7 +45,7 @@ const Home = () => {
     }
   };
 
-  const deletePost = (id) => {
+  const deletePost = useCallback((id) => {
     fetch(`${API}/${id}`, {
       method: "DELETE",
     })
@@ -63,7 +63,7 @@ const Home = () => {
         console.error(error);
         // Handle the error as needed
       });
-  };
+  }, [posts]);
 
   useEffect(() => {
     fetch(`${API}`)
