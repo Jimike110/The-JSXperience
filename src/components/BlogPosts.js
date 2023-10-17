@@ -1,7 +1,8 @@
-const BlogPosts = ({posts, title, deletePost}) => {
+const BlogPosts = ({posts, title, deletePost, loader}) => {
   return (
     <div className="blog-posts">
         <h2>{title}</h2>
+      {loader && <div>Loading...</div>}
       {posts.map((post) => (
         <div
           className="post-preview"
